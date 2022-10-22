@@ -13,6 +13,7 @@ void main() async {
   Map info = jsonData['info'];
   Map user = jsonData['results'][0];
   Map name = user['name'];
+
   print(name['first']);
   print(name['last']);
 }
