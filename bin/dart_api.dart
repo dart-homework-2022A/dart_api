@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 
 void main() async {
@@ -6,5 +8,7 @@ void main() async {
   );
 
   String raw = response.body;
-  print(raw.length);
+
+  Map jsonData = jsonDecode(raw);
+  print(jsonData);
 }
