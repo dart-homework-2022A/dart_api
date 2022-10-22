@@ -10,5 +10,6 @@ void main() async {
   String raw = response.body;
 
   Map jsonData = jsonDecode(raw);
-  print(jsonData);
+  Map info = jsonData['info'];
+  print(info['seed']);
 }
