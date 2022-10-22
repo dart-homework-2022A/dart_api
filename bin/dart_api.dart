@@ -5,5 +5,6 @@ void main() async {
     Uri.parse('https://randomuser.me/api/'),
   );
 
-  print(response.body);
+  String raw = response.body;
+  print(raw.length);
 }
