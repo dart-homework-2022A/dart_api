@@ -11,5 +11,6 @@ void main() async {
 
   Map jsonData = jsonDecode(raw);
   Map info = jsonData['info'];
-  print(info['seed']);
+  Map user = jsonData['results'][0];
+  print(user);
 }
