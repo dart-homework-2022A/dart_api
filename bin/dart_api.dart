@@ -6,5 +6,4 @@ void main() async {
   );
 
   print(response.body);
-  print(response.statusCode);
 }
